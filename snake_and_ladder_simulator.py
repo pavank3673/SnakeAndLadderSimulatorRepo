@@ -11,7 +11,8 @@ def snake_and_ladder():
             print("check option : No Play")
         elif check_option == 2:
             print("check option : Ladder")
-            position += die_value
+            if position + die_value <= 100:
+                position += die_value
         elif check_option == 3:
             print("check option : Snake")
             position -= die_value
